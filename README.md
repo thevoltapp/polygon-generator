@@ -1,5 +1,5 @@
 # Polygon Generator
 ####demo: 
-http://umitdincel.com/polygon-generator.html
+http://umitdincel.github.io/polygon-generator/
 
 ![screenshot](screenshot.png)
