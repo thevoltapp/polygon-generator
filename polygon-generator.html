@@ -81,6 +81,9 @@
                 if(coords_serialize != "")
                     coords_serialize += ", "
                 coords_serialize += coords[i].K + " " + coords[i].G;
+                if(i == coords.length - 1 && coords.length != 1) {
+                    coords_serialize += ", " + coords[0].K + " " + coords[0].G;
+                }
             }
 
             coords = "POLYGON ((" + coords_serialize + "))";
