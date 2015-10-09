@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Polygon Generator</title>
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=drawing"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.21&sensor=false&libraries=drawing"></script>
     <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
     <style type="text/css">
         #map_canvas {
@@ -76,12 +76,14 @@
             var coords_serialize = "";
             var coords = event.overlay.getPath().getArray();
 
+            console.log(coords)
+
             for (var i=0; i < coords.length; i++) {
                 if(coords_serialize != "")
                     coords_serialize += ", "
-                coords_serialize += coords[i].L + " " + coords[i].H;
+                coords_serialize += coords[i].K + " " + coords[i].G;
                 if(i == coords.length - 1 && coords.length != 1) {
-                    coords_serialize += ", " + coords[0].L + " " + coords[0].H;
+                    coords_serialize += ", " + coords[0].K + " " + coords[0].G;
                 }
             }
 
