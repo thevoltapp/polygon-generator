@@ -1,0 +1,37 @@
+#map_canvas {
+    display: block;
+    width: 80%;
+    height: 550px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+#vertices {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 20px;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid #E6E6E6;
+    padding: 5px 10px;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 10px auto;
+    display: block;
+}
+
+button:focus {
+    outline: none;
+}
+
+#vertices:hover, #vertices:focus {
+    outline: none;
+}
