@@ -40,9 +40,9 @@ function initialize() {
         for (var i=0; i < coords.length; i++) {
             if(coords_serialize != "")
                 coords_serialize += ", "
-            coords_serialize += coords[i].K + " " + coords[i].G;
+            coords_serialize += coords[i].lng() + " " + coords[i].lat();
             if(i == coords.length - 1 && coords.length != 1) {
-                coords_serialize += ", " + coords[0].K + " " + coords[0].G;
+                coords_serialize += ", " + coords[0].lng() + " " + coords[0].lat();
             }
         }
 
